@@ -1,0 +1,579 @@
+/* ---- FONTS ---- */
+@font-face {
+    font-family: "Gotham";
+    font-style: normal;
+    font-weight: 400;
+    src: url("assets/fonts/Gotham-Medium.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: "Gotham bold";
+    font-style: bold;
+    font-weight: 800;
+    src: url("assets/fonts/Gotham-Bold.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: "Gotham book";
+    font-style: book;
+    font-weight: 200;
+    src: url("assets/fonts/Gotham-Book.otf") format("opentype");
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gotham-Medium";
+  }
+  
+  /* ---- TEXT ---- */
+  p {
+    font-family: "Gotham book";
+  }
+  
+  /* ---- NAVBAR ---- */
+  .navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+    padding-left: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: black;
+    color: #fff;
+  }
+  nav {
+    flex: 1;
+    text-align: right;
+  }
+  nav ul {
+    display: inline-block;
+    list-style-type: none;
+  }
+  nav ul li {
+    display: inline-block;
+    margin-right: 80px;
+    font-family: "Gotham book";
+    color: #fff;
+    font-size: 14px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+  }
+  a:hover {
+    color: #ddd;
+  }
+  .menu-icon {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+  }
+  
+  /* ---- SLIDESHOW ---- */
+  .home-text {
+    position: absolute;
+    color: white;
+    margin-left: 200px;
+    margin-top: 200px;
+    max-width: 250px;
+  }
+  .home-text h1 {
+    font-size: 70px;
+  }
+  .home-text p {
+    font-size: 16px;
+  }
+  
+  .slideshow-container {
+    max-width: 1000px;
+    position: absolute;
+    margin: auto;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active,
+  .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* ---- CARDS ---- */
+  .containerCards {
+    max-width: 2000px;
+    padding: 100px;
+  }
+  
+  .row {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 0px;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    flex-basis: 33%;
+    text-align: center;
+  }
+  .card p {
+    font-family: "Gotham book";
+  }
+  
+  .card .button {
+    background-color: black;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-family: "Gotham book";
+  }
+  
+  .card .button:hover {
+    color: black;
+    background-color: white;
+  }
+  
+  .card .button p {
+    margin-top: 20px;
+  }
+  
+  .card img {
+    width: 100%;
+  }
+  
+  .col-2 {
+    flex-basis: 50%;
+  }
+  .col-2 h2 {
+    font-size: 60px;
+  }
+  .col-2 p {
+    font-family: "Gotham book";
+    font-size: 14px;
+  }
+  
+  /* ---- WE ARE, WE DO, CAREERS ---- */
+  .row-sec-1 .col-2 button {
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 40px;
+  }
+  
+  .row-sec-1 .col-2 button:hover {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    transition: 0.2s;
+  }
+  
+  .row-sec-2 .col-2 button {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    width: 150px;
+    height: 40px;
+  }
+  
+  .row-sec-2 .col-2 button:hover {
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+  }
+  
+  .container-sec-1 {
+    height: auto;
+    background-color: black;
+  }
+  .row-sec-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .row-sec-1 .col-2 .cardtext {
+    color: white;
+    padding-left: 60px;
+  }
+  
+  .container-sec-2 {
+    height: auto;
+    color: black;
+  }
+  
+  .row-sec-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .row-sec-2 .col-2 .cardtext {
+    margin-left: 400px;
+  }
+  
+  /* ---- TABS ---- */
+  #tabbed-content {
+    text-align: center;
+    padding: 80px;
+  }
+  
+  #tabbed-content ul li {
+    list-style-type: none;
+    display: inline-block;
+  }
+  
+  #tabbed-content li {
+    padding: 10px 14px;
+    background-color: rgb(180, 177, 177);
+    border-radius: 1px;
+    cursor: pointer;
+    margin-right: 0px;
+    text-align: center;
+  }
+  
+  #tabbed-content li:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  #tabbed-content .panel {
+    display: none;
+    background-color: #ddd;
+    padding: 0 10px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 100px;
+  }
+  
+  #tabbed-content .panel.active {
+    display: block;
+  }
+  
+  /* ---- CONTACTS ----*/
+  .containerContacts {
+    max-width: 2000px;
+    padding: 100px;
+    color: #fff;
+    background-color: black;
+  }
+  .row-contacts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .contact__input {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 2px;
+    border: 1.5px solid white;
+    color: white;
+    background-color: black;
+    outline: none;
+    margin-bottom: 1rem;
+  }
+  .contact__button {
+    position: absolute;
+    display: block;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: white;
+    color: black;
+    padding: 0.6rem 2.5rem;
+    border-radius: 2px;
+  }
+  .contact__button:hover {
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+  }
+  .contact__form {
+    max-width: 800px;
+  }
+  .contact__container {
+    justify-items: center;
+  }
+  
+  /* ---- FOOTER ---- */
+  
+  .footer {
+    background-color: black;
+    text-align: center;
+    color: #fff;
+  }
+  .footer-items ul li {
+    display: inline-block;
+    font-family: "Gotham book";
+    font-size: 16px;
+    padding: 20px;
+    color: #ddd;
+  }
+  .footer-items ul li a {
+    list-style-type: none;
+    text-decoration: none;
+    color: #ddd;
+    font-family: "Gotham book";
+  }
+  
+  .footer-socials {
+    text-align: center;
+    display: inline-block;
+    font-size: 30px;
+    color: rgb(158, 157, 157);
+  }
+  
+  /*---- COOKIE ----*/
+  .cookie {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    color: black;
+    font-size: 14px;
+    font-family: "Gotham book";
+    z-index: 9999;
+  }
+  .cookie-button button {
+    border: 1px solid black;
+    background-color: black;
+    outline: none;
+    color: white;
+    width: 100px;
+    height: 35px;
+  }
+  
+  /* ---- MEDIA QUERY FOR SCREEN < 1024 ---- */
+  @media screen and (max-width: 1024px) {
+    nav ul {
+      position: absolute;
+      right: 0;
+      top: 70px;
+      background: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      overflow: hidden;
+      transition: max-height 0.5s;
+      z-index: 9999;
+    }
+    nav ul li {
+      display: block;
+      margin-right: 50px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: white;
+    }
+    nav ul li a {
+      text-decoration: none;
+    }
+    .menu-icon {
+      display: block;
+      cursor: pointer;
+    }
+    .navbar {
+      padding-left: 20px;
+    }
+    .col-2 {
+      flex-basis: 100%;
+      margin-bottom: 40px;
+    }
+    .home-text {
+      margin: 0;
+      padding: 40px 40px;
+    }
+  
+    .home-text h1 {
+      font-size: 60px;
+    }
+    .home-text p {
+      font-size: 12px;
+    }
+  
+    .containerCards {
+      padding: 40px;
+    }
+    .container-sec-1 {
+      height: auto;
+      background-color: white;
+    }
+    .row-sec-2 {
+      flex-wrap: wrap-reverse;
+    }
+    .row-sec-1 .col-2 .cardtext {
+      margin-left: 0px;
+      padding-left: 40px;
+      color: black;
+    }
+    .row-sec-1 .col-2 button {
+      border: 1px solid black;
+      background-color: white;
+      color: black;
+      width: 150px;
+      height: 40px;
+    }
+  
+    .row-sec-1 .col-2 button:hover {
+      border: 1px solid white;
+      background-color: black;
+      color: white;
+    }
+  
+    .row-sec-2 .col-2 .cardtext {
+      margin-left: 0px;
+      padding-left: 40px;
+    }
+  
+    #tabbed-content {
+      padding: 80px;
+    }
+    #tabbed-content .panel {
+      padding: 40px;
+    }
+    #tabbed-content li {
+      margin-bottom: 10px;
+    }
+    .containerContacts {
+      max-width: 2000px;
+      padding: 40px;
+      color: #fff;
+      background-color: black;
+    }
+    .containerContacts h2 {
+      font-size: 50px;
+    }
+  
+    .footer-items ul li {
+      display: block;
+      margin-top: 10px;
+      padding: 0;
+    }
+  }
+  
+  /* ---- MEDIA QUERY < 600 SCREEN SIZE ---- */
+  @media screen and (max-width: 600px) {
+    .row {
+      text-align: center;
+      margin-top: 0;
+      justify-content: space-around;
+    }
+    .home-text {
+      margin: 0;
+      padding: 40px 20px;
+    }
+  
+    .home-text h1 {
+      font-size: 30px;
+    }
+    .home-text p {
+      font-size: 12px;
+    }
+    .dot {
+      height: 10px;
+      width: 10px;
+    }
+    .col-2,
+    .col-3,
+    .col-4,
+    .card,
+    .col-2 form {
+      flex-basis: 100%;
+      margin-bottom: 40px;
+    }
+  
+    .row-sec-1 .col-2 .cardtext h2 {
+      font-size: 40px;
+    }
+    .row-sec-2 .col-2 .cardtext h2 {
+      font-size: 40px;
+    }
+  
+    .row-sec-1 .col-2 .cardtext p,
+    .row-sec-2 .col-2 .cardtext p {
+      font-size: 13px;
+    }
+  
+    .row-sec-1 .col-2 button {
+      width: 115px;
+      height: 35px;
+    }
+    .row-sec-2 .col-2 button {
+      width: 115px;
+      height: 35px;
+    }
+    .row-contacts .col-2 h2 {
+      font-size: 40px;
+    }
+  
+    #tabbed-content {
+      padding: 20px;
+    }
+    #tabbed-content .panel {
+      padding: 40px;
+    }
+    #tabbed-content li {
+      margin-bottom: 10px;
+    }
+    .footer-socials {
+      font-size: 24px;
+    }
+    .cookie {
+      display: block;
+    }
+    .cookie .cookie-text p {
+      font-size: 12px;
+    }
+    .cookie-button button {
+      width: 80px;
+      height: 30px;
+      margin-top: 10px;
+    }
+  }
+  

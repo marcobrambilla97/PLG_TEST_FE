@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <title>Playground | TEST </title>
+  </head>
+  <body>
+    <!-- COOKIES -->
+    <div class="cookie" id="cookiediv">
+      <div class="cookie-text">
+        <p style="margin-right: 10px">Our website uses cookies to improve your experience. To find out more about the cookies we use please see our Privacy Policy.</p>
+      </div>
+      <div class="cookie-button">
+        <button onclick="closeCookie()">OK</button>
+      </div>
+    </div>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/images/logo-playground-white.png" id="nav_logo" style="outline: none; max-width: 250px" alt="">
+        </a>
+      </div>
+      <nav>
+        <ul id="MenuItems">
+          <li>
+            <a href="index.html#weare">we are</a>
+          </li>
+          <li>
+            <a href="index.html#wedo">we do</a>
+          </li>
+          <li>
+            <a href="index.html#careers">careers</a>
+          </li>
+          <li>
+            <a href="index.html#contacts">contact us</a>
+          </li>
+          <li>
+            <a href="#">arcade</a>
+          </li>
+        </ul>
+      </nav>
+      <img src="assets/images/menu2.png" class="menu-icon" alt="" onclick="menutoggle()">
+    </div>
+    <!-- SLIDESHOW -->
+    <div class="home-text">
+      <h1>lorem ipsum.</h1>
+      <br>
+      <p>Consectetur adipiscing elit. Nulla condimentum tortor sem, in semper nisl bibendum eu.</p>
+    </div>
+    <div class="mySlides fade">
+      <img src="assets/images/slide-hello.jpg" style="max-width:100%" alt="">
+    </div>
+    <div class="mySlides fade">
+      <img src="assets/images/slide-circle.jpg" style="max-width:100%" alt="">
+    </div>
+    <div class="mySlides fade">
+      <img src="assets/images/slide-play.jpg" style="max-width:100%" alt="">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <!-- CARDS -->
+    <div class="containerCards">
+      <div class="row">
+        <div class="card">
+          <img src="assets/images/card-play-harder.png" alt="">
+          <br>
+          <br>
+          <p>Aenean mollis dolor a mattis viverra. In hac habitasse platea dictumst. Curabitur tempus dui tortor, et bibendum lacus eleifend ut.</p>
+          <br>
+          <br>
+          <div class="button">
+            <p style="padding:10px;">READ MORE</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/images/card-simplicity.png" alt="">
+          <br>
+          <br>
+          <p>Donec vitae augue tellus. Proin et urna sit amet metus fermentum dapibus non quis urna.</p>
+          <br>
+          <br>
+          <div class="button">
+            <p style="padding:10px;">READ MORE</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/images/card-innovation.png" alt="">
+          <br>
+          <br>
+          <p>Suspendisse vehicula, lectus sed molestie aliquam, arcu neque gravida lacus.</p>
+          <br>
+          <br>
+          <div class="button">
+            <p style="padding: 10px;">READ MORE</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- WE ARE, WE DO, CAREERS -->
+    <section id="weare">
+      <br>
+      <br>
+      <div class="container-sec-1">
+        <div class="row-sec-1">
+          <div class="col-2">
+            <img src="assets/images/banner-we-are.jpg" style="max-width: 100%;" alt="">
+          </div>
+          <div class="col-2">
+            <div class="cardtext">
+              <h2>we <br>are. </h2>
+              <p>Consectetur adipiscing elit. <br> Nulla condimentum tortor sem. </p>
+              <br>
+              <button>THE PLAYERS</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+    <br>
+    <section id="wedo">
+      <br>
+      <br>
+      <div class="container-sec-2">
+        <div class="row-sec-2">
+          <div class="col-2">
+            <div class="cardtext">
+              <h2>we <br>do. </h2>
+              <p>Consectetur adipiscing elit. <br> Nulla condimentum tortor sem. </p>
+              <br>
+              <button>THE PROJECTS </button>
+            </div>
+          </div>
+          <div class="col-2">
+            <img src="assets/images/banner-we-do.jpg" style="max-width: 100%;" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+    <br>
+    <section id="careers">
+      <br>
+      <br>
+      <div class="container-sec-1">
+        <div class="row-sec-1">
+          <div class="col-2">
+            <img src="assets/images/banner-carrers.jpg" style="max-width: 100%;" alt="">
+          </div>
+          <div class="col-2">
+            <div class="cardtext">
+              <h2>careers.</h2>
+              <p>Consectetur adipiscing elit. <br> Nulla condimentum tortor sem. </p>
+              <br>
+              <button>THE POSITIONS</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- TABBED CONTENT -->
+    <div id="tabbed-content" style="background-color: lightgray;">
+      <ul class="tabs">
+        <li data-target="#tab1" class="active">Vestibulum at odio sit amet</li>
+        <li data-target="#tab2">Sed vehicula neque</li>
+        <li data-target="#tab3">Nulla id libero pretium</li>
+      </ul>
+      <div class="panel active" id="tab1" style="font-family: 'Gotham book';"> Vestibulum at odio sit amet diam consectetur congue. Donec imperdiet tincidunt nisi non dignissim. Maecenas diam metus, fermentum a velit ut, auctor consequat ligula. In ultrices lobortis venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque dignissim sit amet lectus ac tincidunt. Quisque bibendum mi at tempus tempus. Suspendisse pretium, quam eu faucibus cursus, nunc leo pharetra justo, ut rutrum lorem ipsum quis velit. Aenean imperdiet molestie dignissim. Curabitur faucibus nulla metus, vel ornare libero accumsan eget </div>
+      <div class="panel" id="tab2" style="font-family: 'Gotham book'"> Donec ultricies felis non sem euismod, vel hendrerit metus porttitor. Donec sed ex ut tellus ultricies vestibulum vitae sit amet erat. Etiam tempor, libero eget bibendum auctor, risus nulla finibus dolor, in ullamcorper ipsum sapien dignissim felis. Nunc mattis sagittis mi, at hendrerit dolor semper non. Sed scelerisque sollicitudin felis euismod laoreet. Nunc elementum purus orci, nec ornare mi vehicula at. Praesent porta nisi in magna aliquam, sed consequat turpis ornare. Sed laoreet porttitor purus vitae tincidunt. </div>
+      <div class="panel" id="tab3" style="font-family: 'Gotham book';"> Quisque massa leo, congue quis turpis et, ullamcorper consequat felis. Nullam non vulputate elit. Fusce id blandit tortor. Nullam sagittis urna quis leo volutpat, nec porta nibh mollis. Sed placerat, ligula sed condimentum fringilla, neque dui blandit dolor, eu semper quam nunc non magna. Cras a hendrerit nisi. Phasellus aliquam rutrum lectus, feugiat eleifend ex faucibus quis. Aliquam sed quam tellus. Duis porta vel nisi at tempus. Suspendisse eu vestibulum odio, id ultricies mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean sit amet auctor tellus. Vivamus sodales nisi fermentum euismod posuere. </div>
+    </div>
+    <!-- CONTACTS -->
+    <section id="contacts">
+      <div class="containerContacts">
+        <div class="row-contacts">
+          <div class="col-2">
+            <h2>Contact <br>us. </h2>
+            <br>
+            <p>Playground srl <br> Via G. Mazzini 3/C, <br> Cernusco Sul Naviglio (Milano) <br> - <br> T +39 024070600 </p>
+          </div>
+          <div class="col-2">
+            <form action="index.html" name="contactForm" class="contact__form" id="form" onsubmit="return(validateForm())">
+              <input type="text" name="name" placeholder="name" id="name" class="contact__input">
+              <div id="emailError" style="color: white; font-family: 'Gotham book';"></div>
+              <input type="email" name="email" id="email" placeholder="email" class="contact__input">
+              <div id="messageError" style="color: white;font-family: 'Gotham book';"></div>
+              <textarea name="message" id="message" cols="1" rows="10" class="contact__input" placeholder="message"></textarea>
+              <input type="submit" name="submit" value="SUBMIT" class="contact__button button">
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <!-- FOOTER -->
+    <div class="footer">
+      <br>
+      <img src="assets/images/logo-playground-white.png" alt="">
+      <br>
+      <br>
+      <div class="footer-items">
+        <ul>
+          <li>
+            <a href="index.html#weare">we are</a>
+          </li>
+          <li>
+            <a href="index.html#wedo">we do</a>
+          </li>
+          <li>
+            <a href="index.html#careers">careers</a>
+          </li>
+          <li>
+            <a href="index.html#contacts">contact us</a>
+          </li>
+        </ul>
+      </div>
+      <br>
+      <div class="footer-socials">
+        <i class='bx bxl-facebook-square'></i>
+        <i class='bx bxl-linkedin'></i>
+        <i class='bx bxl-instagram'></i>
+      </div>
+      <br>
+      <br>
+    </div>
+    <!-- JS -->
+    <script src="main.js"></script>
+  </body>
+</html>
