@@ -438,7 +438,10 @@ a:hover {
   .home-text p {
     font-size: 12px;
   }
-
+  .prev,
+  .next {
+    display: none;
+  }
   .containerCards {
     padding: 40px;
   }
