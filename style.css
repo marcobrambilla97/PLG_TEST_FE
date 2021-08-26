@@ -24,13 +24,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Gotham-Medium";
+  font-family: "Gotham";
 }
 
 /* ---- TEXT ---- */
-p {
+p, li, a{
   font-family: "Gotham book";
 }
+
 
 /* ---- NAVBAR ---- */
 #navbar {
@@ -90,11 +91,10 @@ a:hover {
 }
 
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 2000px;
   position: absolute;
   margin: auto;
   top: 0;
-  z-index: -100;
 }
 
 .mySlides {
@@ -140,7 +140,7 @@ a:hover {
 
 /* ---- CARDS ---- */
 .containerCards {
-  max-width: 2000px;
+  max-width: 100%;
   padding: 100px;
 }
 
@@ -252,7 +252,8 @@ a:hover {
 }
 
 .row-sec-2 .col-2 .cardtext {
-  margin-left: 400px;
+  float: right;
+  padding-right: 60px;
 }
 
 /* ---- TABS ---- */
@@ -296,7 +297,7 @@ a:hover {
 
 /* ---- CONTACTS ----*/
 .containerContacts {
-  max-width: 2000px;
+  max-width: 100%;
   padding: 100px;
   color: #fff;
   background-color: black;
@@ -304,7 +305,6 @@ a:hover {
 .row-contacts {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -399,8 +399,8 @@ a:hover {
   nav ul {
     position: absolute;
     right: 0;
-    top: 70px;
-    background: rgba(0, 0, 0, 0.5);
+    top: 60px;
+    background: black;
     width: 100%;
     overflow: hidden;
     transition: max-height 0.5s;
@@ -486,7 +486,7 @@ a:hover {
     margin-bottom: 10px;
   }
   .containerContacts {
-    max-width: 2000px;
+    max-width: 100%;
     padding: 40px;
     color: #fff;
     background-color: black;
