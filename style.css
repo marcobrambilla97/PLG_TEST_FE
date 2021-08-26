@@ -91,7 +91,7 @@ a:hover {
 }
 
 .slideshow-container {
-  max-width: 2000px;
+  max-width: 100%;
   position: absolute;
   margin: auto;
   top: 0;
