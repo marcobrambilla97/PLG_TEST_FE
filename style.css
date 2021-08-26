@@ -394,6 +394,21 @@ a:hover {
   height: 35px;
 }
 
+/* ---- MEDIA QUERY FOR SCREEN > 1440 ---- */
+@media screen and (min-width: 1440px) {
+  .home-text{
+    margin-left: 200px;
+    margin-top: 280px;
+    max-width: 250px;
+  }
+  .home-text h1{
+    font-size: 80px;
+  }
+  .home-text p{
+    font-size: 16px;
+  }
+}
+
 /* ---- MEDIA QUERY FOR SCREEN < 1024 ---- */
 @media screen and (max-width: 1024px) {
   nav ul {
@@ -472,7 +487,7 @@ a:hover {
   }
 
   .row-sec-2 .col-2 .cardtext {
-    margin-left: 0px;
+    float: left;
     padding-left: 40px;
   }
 
